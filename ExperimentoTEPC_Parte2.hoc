@@ -1,0 +1,374 @@
+// ///////////////////////////////////////////////////////////////////////////////////////
+//
+// Arquivo com o código do Laboratório 2 da disciplina Tópicos Especiais em Psicologia Clínica 
+// O Laboratório tem por objetivo:
+// - Cálculo o período refratário
+//
+// Grupo de Neurociência Computacional 
+// Julian Tejada
+// UFS - 2018
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+load_file("nrngui.hoc")
+lambda=0
+
+xpanel("TEPC-Experimento2")
+xlabel("Selecione o modelo segundo o valor da lista")
+// xvalue(&numero)
+xradiobutton("Neuron 1", "Load1()")
+xradiobutton("Neuron 2", "Load2()")
+xradiobutton("Neuron 3", "Load3()")
+xradiobutton("Neuron 4", "Load4()")
+xradiobutton("Neuron 5", "Load5()")
+xradiobutton("Neuron 6", "Load6()")
+xradiobutton("Neuron 7", "Load7()")
+xradiobutton("Neuron 8", "Load8()")
+xradiobutton("Neuron 9", "Load9()")
+xradiobutton("Neuron 10", "Load10()")
+xradiobutton("Neuron 11", "Load11()")
+xradiobutton("Neuron 12", "Load12()")
+xradiobutton("Neuron 13", "Load13()")
+xradiobutton("Neuron 14", "Load14()")
+xradiobutton("Neuron 15", "Load15()")
+xradiobutton("Neuron 16", "Load16()")
+xradiobutton("Neuron 17", "Load17()")
+xradiobutton("Neuron 18", "Load18()")
+xradiobutton("Neuron 19", "Load19()")
+xradiobutton("Neuron 20", "Load20()")
+xradiobutton("Neuron 21", "Load21()")
+xradiobutton("Neuron 22", "Load22()")
+xradiobutton("Neuron 23", "Load23()")
+xradiobutton("Neuron 24", "Load24()")
+xradiobutton("Neuron 25", "Load25()")
+xradiobutton("Neuron 26", "Load26()")
+xradiobutton("Neuron 27", "Load27()")
+xradiobutton("Neuron 28", "Load28()")
+xradiobutton("Neuron 29", "Load29()")
+xradiobutton("Neuron 30", "Load30()")
+xradiobutton("Neuron 31", "Load31()")
+xradiobutton("Neuron 32", "Load32()")
+xradiobutton("Neuron 33", "Load33()")
+xradiobutton("Neuron 34", "Load34()")
+xradiobutton("Neuron 35", "Load35()")
+xradiobutton("Neuron 36", "Load36()")
+xradiobutton("Neuron 37", "Load37()")
+xradiobutton("Neuron 38", "Load38()")
+xradiobutton("Neuron 39", "Load39()")
+xradiobutton("Neuron 40", "Load40()")
+xradiobutton("Neuron 41", "Load41()")
+xradiobutton("Neuron 42", "Load42()")
+xradiobutton("Neuron 43", "Load43()")
+xradiobutton("Neuron 44", "Load44()")
+xradiobutton("Neuron 45", "Load45()")
+xradiobutton("Neuron 46", "Load46()")
+xradiobutton("Neuron 47", "Load47()")
+xradiobutton("Neuron 48", "Load48()")
+xradiobutton("Neuron 49", "Load49()")
+xradiobutton("Neuron 50", "Load50()")
+
+xpanel(0,136)
+objref p
+p = new PWManager()
+TempoParada = 300
+
+proc Load1() {
+    load_file("hocs/Neuronio1.hoc")
+    load_file("hocs/Janela2.hoc")
+        p.hide(1)
+    
+}
+
+proc Load2() {
+    load_file("hocs/Neuronio2.hoc")
+    load_file("hocs/Janela2.hoc")
+    p.hide(1)
+}
+    
+proc Load3() {
+    load_file("hocs/Neuronio3.hoc")
+    load_file("hocs/Janela2.hoc")
+    p.hide(1)
+}
+
+proc Load4() {
+    load_file("hocs/Neuronio4.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load5() {
+    load_file("hocs/Neuronio5.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load6() {
+    load_file("hocs/Neuronio6.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load7() {
+    load_file("hocs/Neuronio7.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load8() {
+    load_file("hocs/Neuronio8.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load9() {
+    load_file("hocs/Neuronio9.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load10() {
+    load_file("hocs/Neuronio10.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load11() {
+    load_file("hocs/Neuronio11.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+    
+}
+
+proc Load12() {
+    load_file("hocs/Neuronio12.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+    
+}
+
+proc Load13() {
+    load_file("hocs/Neuronio13.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+    
+}
+
+proc Load14() {
+    load_file("hocs/Neuronio14.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+    
+}
+
+proc Load15() {
+    load_file("hocs/Neuronio15.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+    
+}
+
+proc Load16() {
+    load_file("hocs/Neuronio16.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+    
+}
+
+proc Load17() {
+    load_file("hocs/Neuronio17.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+    
+}
+
+proc Load18() {
+    load_file("hocs/Neuronio18.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+    
+}
+
+proc Load19() {
+    load_file("hocs/Neuronio19.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+    
+}
+
+proc Load20() {
+    load_file("hocs/Neuronio20.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load21() {
+    load_file("hocs/Neuronio21.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load22() {
+    load_file("hocs/Neuronio22.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load23() {
+    load_file("hocs/Neuronio23.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load24() {
+    load_file("hocs/Neuronio24.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load25() {
+    load_file("hocs/Neuronio25.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load26() {
+    load_file("hocs/Neuronio26.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load27() {
+    load_file("hocs/Neuronio27.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load28() {
+    load_file("hocs/Neuronio28.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load29() {
+    load_file("hocs/Neuronio29.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load30() {
+    load_file("hocs/Neuronio30.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+proc Load31() {
+    load_file("hocs/Neuronio31.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+proc Load32() {
+    load_file("hocs/Neuronio32.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+proc Load33() {
+    load_file("hocs/Neuronio33.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+proc Load34() {
+    load_file("hocs/Neuronio34.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+proc Load35() {
+    load_file("hocs/Neuronio35.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+proc Load36() {
+    load_file("hocs/Neuronio36.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+proc Load37() {
+    load_file("hocs/Neuronio37.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+proc Load38() {
+    load_file("hocs/Neuronio38.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+proc Load39() {
+    load_file("hocs/Neuronio39.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load40() {
+    load_file("hocs/Neuronio40.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load41() {
+    load_file("hocs/Neuronio41.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load42() {
+    load_file("hocs/Neuronio42.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load43() {
+    load_file("hocs/Neuronio43.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load44() {
+    load_file("hocs/Neuronio44.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load45() {
+    load_file("hocs/Neuronio45.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load46() {
+    load_file("hocs/Neuronio46.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load47() {
+    load_file("hocs/Neuronio47.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load48() {
+    load_file("hocs/Neuronio48.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load49() {
+    load_file("hocs/Neuronio49.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
+
+proc Load50() {
+    load_file("hocs/Neuronio50.hoc")
+    load_file("hocs/Janela2.hoc")
+     p.hide(1)
+}
