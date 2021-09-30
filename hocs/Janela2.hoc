@@ -1,0 +1,52 @@
+// ///////////////////////////////////////////////////////////////////////////////////////
+//
+// Arquivo com o código do Laboratório 2 da disciplina Tópicos Especiais em Psicologia Clínica 
+// 
+// Grupo de Neurociência Computacional 
+// Julian Tejada
+// UFS - 2018
+///////////////////////////////////////////////////////////////////////////////////////
+
+numero=0
+valor1=0
+valor2=0
+valor3=0
+xpanel("TEPC-Experimento2-Parte2")
+xlabel("Coloque os valores da corrente")
+xvalue("Primeiro Est", "valor1", 0, "CarregaCorrente1()")
+xvalue("Segundo Est", "valor2", 0, "CarregaCorrente2()")
+xlabel("Coloque o valor do intervalo de tempo entre os dois Est")
+xvalue("Intervalo de tempo", "valor3", 0, "CarregaTempo()")
+
+
+// xvalue("Carregar ",1, valor, 1)
+// xvalue("Type a number", valor, 1, "CarregaCorrente()",0,0)
+
+xpanel(361,583)
+
+
+
+proc CarregaCorrente1() {
+    for i=0, dendrites {
+        stim[i].amp = valor1*2
+        stim[i].dur = 2
+    }
+    continue_dialog("O valor do primeiro Est foi atualizado")
+    tstop = 200
+}
+    
+proc CarregaCorrente2() {
+    for i=0, dendrites {
+        stim2[i].amp = valor2*2
+        stim2[i].dur = 2
+    }
+    continue_dialog("O valor do segundo Est foi atualizado")
+}
+
+proc CarregaTempo() {
+    for i=0, dendrites {
+        stim2[i].del = stim[i].dur + stim[i].del +  valor3
+    }
+    continue_dialog("O valor do intervalo de tempo foi atualizado")
+}
+  

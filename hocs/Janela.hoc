@@ -1,0 +1,26 @@
+// ///////////////////////////////////////////////////////////////////////////////////////
+//
+// Arquivo com o código do Laboratório 2 da disciplina Tópicos Especiais em Psicologia Clínica 
+// 
+// Grupo de Neurociência Computacional 
+// Julian Tejada
+// UFS - 2018
+///////////////////////////////////////////////////////////////////////////////////////
+
+numero=0
+valor=0
+xpanel("TEPC-Experimento2-Parte1")
+xlabel("Coloque o valor da corrente e clique em Carregar")
+xvalue("Carregar", "valor", 0, "CarregaCorrente()")
+// xvalue("Carregar ",1, valor, 1)
+// xvalue("Type a number", valor, 1, "CarregaCorrente()",0,0)
+
+xpanel(361,583)
+
+
+
+proc CarregaCorrente() {
+    Atualiza()
+    continue_dialog("O valor da corrente foi atualizado")
+}
+    
